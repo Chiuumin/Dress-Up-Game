@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dress Up Game!</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            "What should I wear today?"
+        </div>
+
+        <div class="character-display">
+          <img id="base-img" src="assets/base chara.png" alt="Base Character" />
+            <img id="bottom-img" src="" alt="Bottoms" />
+          <img id="top-img" src="" alt="Top" />
+          <img id="hair-img" src="" alt="Hair" />
+           <img id="shoes-img" src="" alt="Shoes" />
+</div>
+    </div>
+
+    <div class="clothing-icons">
+        <div class="icon-frame" onclick="changeItem('hair')">
+            <img src="assets/hairicon.png" alt="Hair Icon" />
+        </div>
+        <div class="icon-frame" onclick="changeItem('top')">
+            <img src="assets/topicon.png" alt="Top Icon" />
+        </div>
+        <div class="icon-frame" onclick="changeItem('bottom')">
+            <img src="assets/bottomicon.png" alt="Bottom Icon" />
+        </div>
+        <div class="icon-frame" onclick="changeItem('shoes')">
+            <img src="assets/shoeicon.png" alt="Shoes Icon" />
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="prevBtn">&lt;</button>
+        <button id="nextBtn">&gt;</button>
+    </div>
+
+    <script src="dress up game.js"></script>
+</body>
+
+</html>
