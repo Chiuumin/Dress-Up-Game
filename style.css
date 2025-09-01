@@ -3,6 +3,31 @@
     src: url('fonts/GomePixel-ARJd7.otf') format('opentype');
 }
 
+.page {
+    display: none;
+    text-align: center;
+}
+
+
+.page.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#startButton {
+    font-family: 'GomePixel';
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: 2px solid #5a5a7b;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #5a5a7b;
+    margin-top: 20px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -37,7 +62,7 @@ body {
     padding: 10px;
     font-size: large;
     background-color: #ffffff;
-    border: 3x solid #ffffff;
+    border: 3px solid #ffffff;
 }
 
 .character-display {
