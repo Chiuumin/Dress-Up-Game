@@ -1,8 +1,21 @@
 const mainMenu = document.getElementById('main-menu');
 const gamePage = document.getElementById('game-page');
 const startButton = document.getElementById('startButton');
+const sound = document.getElementById('popsound');
+const myAudio = document.getElementById('bgm');
+const playButton = document.getElementById('play-btn');
+const pauseButton = document.getElementById('pause-btn');
+
+playButton.addEventListener('click', () => {
+  myAudio.play();
+});
+
+pauseButton.addEventListener('click', () => {
+  myAudio.pause();
+});
 
 startButton.addEventListener('click', () => {
+    sound.play();
     mainMenu.classList.remove('active');
     gamePage.classList.add('active');
 });
@@ -45,6 +58,8 @@ function changeItem(category) {
 }
 
 nextBtn.addEventListener("click", () => {
+    sound.currentTime = 0;
+    sound.play();
     if (!activeCategory) return;
     const categoryArray = clothing[activeCategory];
     const currentIndex = currentSelection[activeCategory];
@@ -55,6 +70,8 @@ nextBtn.addEventListener("click", () => {
 });
 
 prevBtn.addEventListener("click", () => {
+    sound.currentTime = 0;
+    sound.play();
     if (!activeCategory) return;
     const categoryArray = clothing[activeCategory];
     const currentIndex = currentSelection[activeCategory];

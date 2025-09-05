@@ -13,6 +13,7 @@
     <div id="main-menu" class="page active">
         <h1>Dress-Up Game!</h1>
         <button id="startButton">Start Game</button>
+        <audio id="popsound" src="assets/pop.mp3"></audio>
     </div>
 
     <div id="game-page" class="page">
@@ -30,23 +31,40 @@
     <div class="clothing-icons">
         <div class="icon-frame" onclick="changeItem('hair')">
             <img src="assets/hairicon.png" alt="Hair Icon" />
+            <audio id="popsound" src="assets/pop.mp3"></audio>
         </div>
+
         <div class="icon-frame" onclick="changeItem('top')">
             <img src="assets/topicon.png" alt="Top Icon" />
+            <audio id="popsound" src="assets/pop.mp3"></audio>
         </div>
+
         <div class="icon-frame" onclick="changeItem('bottom')">
             <img src="assets/bottomicon.png" alt="Bottom Icon" />
+            <audio id="popsound" src="assets/pop.mp3"></audio>
         </div>
+
         <div class="icon-frame" onclick="changeItem('shoes')">
             <img src="assets/shoeicon.png" alt="Shoes Icon" />
+            <audio id="popsound" src="assets/pop.mp3"></audio>
         </div>
     </div>
     
     <div class="controls">
         <button id="prevBtn">&lt;</button>
+        <audio id="popsound" src="assets/pop.mp3"></audio>
         <button id="nextBtn">&gt;</button>
+        <audio id="popsound" src="assets/pop.mp3"></audio>
     </div>
-</div>
+    
+    <audio id="bgm">
+        <source src="assets/Sky_Blue_POP.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="play-btn">Play</button>
+    <button id="pause-btn">Pause</button>
+
+    </div>
 
     <script src="dress up game.js"></script>
 </body>
